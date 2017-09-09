@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <title>HTML Guide</title>
+  </head>
+  <body>
+    <h1 id="top">HTML Cheat Sheet - By: Liam Davies</h1>
+
+    <h1>Structure:</h1><hr />
+    <blockquote>
+      <h2>General Structure:</h2>
+      <blockquote>
+        < html ><br />
+        <blockquote>
+          < head ><br />
+          <blockquote>
+            < title > Tab Title < /title >
+          </blockquote>
+          < /head ><br />
+          <br />
+          < body ><br />
+          <blockquote>
+            < p > (paragraph) < /p >
+          </blockquote>
+          < /body ><br />
+        </blockquote>
+        < /html>
+      </blockquote>
+
+    </blockquote>
+    <h1>Text formatting:</h1><hr />
+    <blockquote>
+    <h2>Headers:</h2>
+      <blockquote>
+        <h1>Header - < h1 ></h1>
+        <h2>Header - < h2 ></h2>
+        <h3>Header - < h3 ></h3>
+        <h4>Header - < h4 ></h4>
+        <h5>Header - < h5 ></h5>
+        <h6>Header - < h6 ></h6>
+      </blockquote>
+
+    <h2>Structural Markup:</h2>
+      <blockquote>
+        <ul>
+          <li> Paragraph - < p > (Creates a new paragraph of text)</li>
+          <li> <b>Bold</b> - < b > </li>
+          <li> <i>Italics</i> - < i > </li>
+          <li> Super<sup>script</sup> - < sup > </li>
+          <li> Sub<sub>scipt</sub> - < sub > </li>
+          <li> Newline - < br / > (starts a new line)</li>
+          <li> Horizontal Line - < br / > (creates a horizontal line) </li>
+        </ul>
+      </blockquote>
+
+    <h2>Semantic Markup:</h2>
+      <blockquote>
+        <ul>
+          <li> <strong>< strong ></strong> - for important content</li>
+          <li> <em>< em ></em> - for ephmasized content</li>
+          <li> < blockquote > - for longer quotes (indent)<hr />
+            <p><b>HTML:</b><br />
+              < blockquote > This is the blockquote. < /blockquote ></p>
+              <p><b>Actual:</b>
+                <blockquote>
+                This is the blockquote.
+                </blockquote></p></li> <hr />
+          <li> <q>< q ></q> - for shorter quotes [NOT USED]</li>
+          <li> <aabr title="Abbreviation">< abbr ></abbr> - to expand upon abbreviations (when hovering over them) </li>
+          <li> <cite>< cite ></cite> - for refrences to pieces of work (such as books)</li>
+          <li> <dfn>< dfn ></dfn> - used when defining a new term </li>
+          <li> < address > - used for contacting the webpage author <hr />
+            <p><b>HTML:</b><br />
+              < address ><br />
+              < p > < a href="mailto:boi@boi.boi" > boi@boi.boi < /a > < /p ><br />
+              < p > 000 Palace Place, HTML < /p ><br />
+              < /address ></p>
+            <p><b>Actual:</b>
+              <address>
+                  <p> <a href="mailto:boi@boi.boi"> boi@boi.boi </a> </p>
+                  <p> 000 Palace Place, HTML </p>
+              </address></p></li><hr />
+          <li> <ins> < ins > </ins> - for whats been inserted </li>
+          <li> <del> < del > </del> - for whats been deleted </li>
+          <li> <s> < s > </s> - no longer relevant but not deleted</li>
+        </ul>
+      </blockquote>
+    </blockquote>
+
+    <h1>Lists:</h1><hr />
+    <blockquote>
+      <h2>Ordered Lists:</h2>
+      <p>Lists where elements are sequentially ordered.</p>
+      <ul>
+        <li>Opened with < ol > closed with < /ol ></li>
+        <li>Each element opened with < li > closed with < /li ></li>
+      </ul>
+      <p> Example:
+        <p> Race Results
+          <ol>
+            <li>Billy</li>
+            <li>Alice</li>
+            <li>David</li>
+          </ol>
+        </p>
+      </p>
+
+    <h2>Unordered Lists:</h2>
+    <p>Lists where elements are unordered.</p>
+    <ul>
+      <li>Opened with < ul > closed with < /ul ></li>
+      <li>Each element opened with < li > closed with < /li ></li>
+    </ul>
+    <p> Example:
+      <p> Shopping List
+        <ul>
+          <li>Eggs</li>
+          <li>Apples</li>
+          <li>Avacados</li>
+        </ul>
+      </p>
+    </p>
+
+    <h2>Definition Lists:</h2>
+    <p>Lists where elements are being defined.</p>
+    <ul>
+      <li>Opened with < dl > closed with < /dl ></li>
+      <li>Each element to be defined is opened with < dt > closed with < /dt ></li>
+      <li>Each definition of an element is opened with < dd > closed with < /dd ></li>
+    </ul>
+    <p> Example:
+      <p> Terms to Know
+        <dl>
+          <dt>HTML</dt>
+          <dd>What I am using to type this.</dd>
+          <dt>Liam Davies</dt>
+          <dd>The author of this page.</dd>
+          <dt>Python</dt>
+          <dd>Actually a joke.</dd>
+        </dl>
+      </p>
+    </p>
+
+    <h2>Nested Lists:</h2>
+    <p>You can nest lists by opening a new list inside the element of another list.</p>
+    <p> Example:
+      <p> Race Results
+        <ol>
+          <li>Billy
+            <ul>
+              <li> Two time champion! </li>
+              <li> Totally a jerk. </li>
+            </ul>
+          </li>
+          <li>Alice
+            <ul>
+              <li> Always comes in second. </li>
+              <li> Happy just to participate. </li>
+            </ul>
+          </li>
+          <li>David</li>
+            <ul>
+              <li> Sore Loser. </li>
+              <li> Will never return to this staduim. </li>
+            </ul>
+        </ol>
+      </p>
+    </p>
+    </blockquote>
+
+    <h1>Links:</h1><hr />
+    <blockquote>
+      <p>Links are created using < a href="weblink" > TEXT < /a ></p>
+
+      <h2>Other Sites:</h2>
+      <b>HTML:</b>
+      <p> < a href="http://www.imdb.com" > IMDB < /a > </p>
+      <b>Actual:</b>
+      <p> <a href="http://www.imdb.com"> IMDB </a> </p>
+
+      <h2>Same Site Pages:</h2>
+      <p> Use the realitive path of the page </p>
+      <b>HTML:</b>
+      <p> < a href="OtherTestPage.html" > Other Test Page < /a > </p>
+      <b>Actual:</b>
+      <p> <a href="OtherTestPage.html"> Other Test Page </a> </p>
+
+      <h2 id="linknotes">Link Notes:</h2>
+      <ul>
+        <li>"mailto:" - add this to the front of the href string if its an email
+          <ul>
+            <li><b>HTML:</b> < a href="mailto:boi@boi.boi" > boi@boi.boi < /a ></li>
+            <li><b>Actual:</b> <a href="mailto:boi@boi.boi"> boi@boi.boi </a></li>
+          </ul>
+        </li><br />
+        <li>"target" - add this as an attribute with the value "_blank"
+          <ul>
+            <li><b>HTML:</b> < a href="http://www.imdb.com" target="_blank" > IMDB < /a ></li>
+            <li><b>Actual:</b> <a href="http://www.imdb.com" target="_blank"> IMDB </a></li>
+          </ul>
+        </li><br />
+        <li>Linking to a specific part of a page: Must give a header an attribute: id="idname"
+          <ul>
+            <li><b>HTML:</b> < a href="#top" > Top < /a > </li>
+            <li><b>Actual:</b> <a href="#top"> Top </a> </li>
+          </ul>
+        </li><br />
+        <li>To link to a specific part of a different page, add #linkName to the end of the link
+            <ul>
+              <li>Ex:<a href="OtherTestPage.html"> Hit the second link on this page... </a></li>
+            </ul>
+        </li>
+      </ul>
+    </blockquote>
+
+    <h1>Images:</h1><hr />
+
+  </body>
+</html>
