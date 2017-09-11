@@ -213,6 +213,96 @@
     </blockquote>
 
     <h1>Images:</h1><hr />
+    <blockquote>
+      <h2>< img ></h2>
+      <p>Use CSS to properly align images</p>
+      <p><b>Attributes</b></p>
+      <ul>
+        <li>src - uses a realitive url (src="images/bear.jpg")</li>
+        <li>alt - desciption of picture for if you can't see it</li>
+        <li>title - additional info about the image</li>
+        <li>height - specifies the height of the image in pixels</li>
+        <li>width - specifies the width of the image in pixels</li>
+      </ul>
+      <p><b>Figure and Caption</b></p>
+      <ul>
+        <li>< figure > - contains an image and its caption</li>
+        <ul>
+          <li><b>Example:</b>
+            <figure>
+            <img src="images/test.jpg" alt="Our test image"/>
+            <br />
+            <figcaption>This is the caption for this image.</figcaption>
+            </figure>
+          </li>
+        </ul>
+        <li>< figcaption > - the caption for an image in the same < figure ></li>
+      </ul>
+    </blockquote>
+
+    <h1>Tables:</h1><hr />
+    <blockquote>
+      <p><b>Table Tags:</b></p>
+      <ul>
+        <li>< table > - contains the table data</li>
+        <li>< tr > - contains the data of a single row of the table</li>
+        <li>< td > - contains the data of a single cell of a row of the table</li>
+        <li>< th > - contains the heading for a single column of the table</li>
+      </ul>
+
+      <p><b>Table Tag Attributes:</b></p>
+      <ul>
+        <li>colspan (td/th) - how many column cells this cell will encompass</li>
+        <li>rowspan (td) - how many row cells this cell will encompass</li>
+      </ul>
+
+      <p><b>Long Table Tags:</b></p>
+      <ul>
+        <li>< thead > - headings of the table</li>
+        <li>< tbody > - body of the table </li>
+        <li>< tfoot > - footer of the table</li>
+      </ul>
+
+
+      <p><b>Example:</b><br />
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Heading 1 </th>
+              <th>Heading 2 </th>
+              <th>Heading 3 </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1</td>
+              <td colspan="2">data1.(1/2)</td>
+              <td>data1.3</td>
+            </tr>
+            <tr>
+              <td>Row 2</td>
+              <td rowspan="2">data(2/3).1</td>
+              <td>data2.2</td>
+              <td>data2.3</td>
+            </tr>
+            <tr>
+              <td>Row 3</td>
+              <td>data3.2</td>
+              <td>data3.3</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Foot Row (4)</td>
+              <td>data4.1</td>
+              <td>data4.2</td>
+              <td>data4.3</td>
+            </tr>
+          </tfoot>
+        </table>
+      </p>
+    </blockquote>
 
   </body>
 </html>
