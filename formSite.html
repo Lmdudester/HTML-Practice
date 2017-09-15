@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Form Site</title>
+  </head>
+  <body>
+    <p><a href="HTMLCheatSheet.html#testFormLink">Return to HTML Cheat Sheet</a></p>
+
+    <h1>Sample Form #1- Simple Text</h1>
+    <form action="test.php" method="get" id="sf1">
+      <p>Regular Text Input:
+        <input type="text" maxlength="10" />
+      </p>
+      <p>Password Text Input:
+        <input type="password" maxlength="10" />
+      </p>
+      <p>This is a text area:</p>
+      <textarea name="testta">Enter text here...</textarea>
+    </form>
+
+    <h1>Sample Form #2 - Boxes</h1>
+    <form action ="test.php" method="get" id="sf2">
+      <p>Here is a set of radio buttons:</p>
+      <input type="radio" name="chooseRadio" value="Radio 1" checked="checked" /> Radio 1 <br />
+      <input type="radio" name="chooseRadio" value="Radio 2" /> Radio 2 <br />
+      <input type="radio" name="chooseRadio" value="Radio 3" /> Radio 3
+
+      <p>Here is a set of checkboxes:</p>
+      <input type="checkbox" name="choosebox" value="Box 1" /> Checkbox 1 <br />
+      <input type="checkbox" name="choosebox" value="Box 2" /> Checkbox 2 <br />
+      <input type="checkbox" name="choosebox" value="Box 3" /> Checkbox 3 <br />
+
+      <p>Here is a dropdown box:</p>
+      <select name="selectBox">
+        <option value="Item 1">Item 1</option>
+        <option value="Item 2">Item 2</option>
+        <option value="Item 3">Item 3</option>
+      </select>
+
+      <p>Here is a multi-select box:</p>
+      <select name="multiSelectBox" size="4" multiple="multiple">
+        <option value="Item 1">Item 1</option>
+        <option value="Item 2">Item 2</option>
+        <option value="Item 3">Item 3</option>
+        <option value="Item 4">Item 4</option>
+      </select>
+    </form>
+
+    <h1>Sample Form #3 - Other Inputs and Submitting</h1>
+    <form action ="test.php" method="get" id="sf3">
+      <p>Here is a file box:</p>
+      <input type="file" name="inpFile" /><br /><br />
+      <input type="submit" value="This is a Submit Button" /><br /><br />
+
+      <fieldset>
+        <legend>This is a fieldset (Every box is required)</legend>
+        <label>Name: <input type="text" name="name" required="required" /></label><br />
+        <label>Email: <input type="email" name="email" required="required" /></label><br />
+        <label>Date: <input type="date" name="date" required="required" /></label><br />
+        <label>Website: <input type="url" name="website" required="required" /></label><br />
+      </fieldset>
+
+
+    </form>
+
+  </body>
+</html>

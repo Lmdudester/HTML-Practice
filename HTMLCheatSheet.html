@@ -304,5 +304,117 @@
       </p>
     </blockquote>
 
+    <h1>Forms:</h1><hr />
+    <blockquote>
+
+      <p><b>< form ></b> - overarching tag for forms<br /><br /><b>Attributes:</b></p>
+      <ul>
+        <li>action - a URL for the page to recieve the server info when it is submitted</li>
+        <li>method - (get/post) get - value added to end of URL | post - values sent in HTTP Headers (for larger data)</li>
+        <li>id - for unique identification by scripts </li>
+      </ul>
+
+      <p><b>< input ></b> - used to create form controls</p>
+      <ul>
+        <li>type - the kind of input
+        <ul>
+          <li>"text" - creates a single line of text input (name, maxlength)</li>
+          <li>"password" - creates same thing but blacks out text(name, size/maxlength)</li>
+          <li>"radio" - select only one option (name, value, checked)</li>
+          <li>"checkbox" - select multiple options (name, value, checked)</li>
+        </ul></li>
+        <li>name - the name of the info being entered</li>
+        <li>maxlength - the maximum length of characters that may be entered</li>
+        <li>value - indicates the value that will be sent to the server if checked</li>
+        <li>checked - indicates which (if any) bo should already be "checked"</li>
+      </ul>
+
+      <p><b>< select ></b> - makes a drop down list (use with < form >)<br /><br /><b>Attributes and Tags:</b></p>
+      <ul>
+        <li>name - name of the form</li>
+        <li>< option > - specify options user can select from
+        <ul>
+          <li>value - the name of what will be sent to the server</li>
+          <li>selected - what begins selected</li>
+          <li>multiple - allows user to select multiple things from the list</li>
+          <li>size - how many options to show at once (mostly for multiple)</li>
+        </ul></li>
+      </ul>
+
+      <p><b>< input ></b> - for uploading files<br /><br /><b>Attributes:</b></p>
+      <ul>
+        <li>type - indicates the input type
+        <ul>
+          <li>"file" - creates a text box with a "browse" button</li>
+          <li>"submit" - sends the form to the server</li>
+          <li>"image" - uses an image as your submit button (must use src="filepath" with it)</li>
+          <li>"hidden" - won't show to user, allows web page to submit extra data user doesn't control</li>
+        </ul></li>
+        <li>name - name the attribute (if you want to)</li>
+        <li>value - controls the text that appears on the button</li>
+      </ul>
+
+      <p><b>< button ></b> - ???</p>
+
+      <p><b>< textarea ></b> - used to create multiline text input</p>
+
+      <p><b>< label ></b> - defines a label for any given input box<br / ><b>Attributes:</b></p>
+      <ul>
+        <li>for - tells what input the label is attached to</li>
+      </ul>
+
+      <h2>Grouping Elements</h2>
+      <ul>
+        <li>< fieldset > - group related elements together in a fieldset element</li>
+        <li>< legend > - names the group of elements</li>
+      </ul>
+
+      <h2>HTML5: Form Validation</h2>
+      <p>Use required="required" under the < input > tag to make the user submit something there</p>
+
+      <h3>HTML5: Date Input</h3>
+      <p>Use type="date" under < input > to ask the user for a date</p>
+
+      <h3>HTML5: Email and URL Input</h3>
+      <p>Use type="email" for emails, type="url" for urls</p>
+
+      <h3>HTML5: Search Input</h3>
+      <p>Use type="search" under < input > to make it a search box</p>
+      <ul><li>placeholder - the text in the search box before anything is typed in</li></ul>
+
+      <h2 id="testFormLink">Test Form:</h2>
+      <p> <a href="formSite.html"> Form Site </a> </p>
+    </blockquote>
+
+    <h1>Extra Info:</h1><hr />
+    <blockquote>
+      <h2>< div ></h2>
+      <p>Used to group a set of elements together</p>
+
+      <h2>< span ></h2>
+      <p>Used to differentiate text when another tag doesn't cover it</p>
+
+      <h2>< iframe ></h2>
+      <p>Used to make a little window of another page on your own</p>
+      <ul>
+        <li>src - URL of the page to show</li>
+        <li>height - the height of the iframe in pixels</li>
+        <li>width - the width of the ifram in pixels</li>
+        <li>seamless - refuses scrollbars</li>
+      </ul>
+
+      <h2>< meta ></h2>
+      <p>Attribute: name="wordsBelow" content="related info"</p>
+      <ul>
+        <li>"description" - description of page</li>
+        <li>"keywords" - keywords of page seperated by commas</li>
+        <li>"robots" - "noindex" if search engines shouldn't pick it up, "nofollow" if they shouldnt link to pages it links to</li>
+        <li>"author" - the author of the page</li>
+        <li>"pragma" - prevents the browser from caching the page "no-cache"</li>
+        <li>"expires" - when the page should expire from cache</li>
+      </ul>
+
+    </blockquote>
+
   </body>
 </html>
